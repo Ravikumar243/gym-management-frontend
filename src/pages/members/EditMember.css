@@ -1,0 +1,678 @@
+.edit-member-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 22px 24px 40px;
+    background: #f7f8fc;
+    color: #182230;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.edit-member-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.edit-member-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 5px;
+
+    font-size: 11px;
+    color: #8b95a5;
+}
+
+.edit-member-breadcrumb i {
+    font-size: 9px;
+}
+
+.edit-member-header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #182230;
+}
+
+.edit-member-header p {
+    margin: 4px 0 0;
+    font-size: 11px;
+    color: #7c8798;
+}
+
+.edit-member-header p strong {
+    color: #4d5969;
+}
+
+
+/* ==========================================
+   HEADER BUTTONS
+========================================== */
+
+.edit-member-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-member-cancel,
+.edit-member-save {
+    height: 34px;
+    border-radius: 6px;
+    padding: 0 14px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.edit-member-cancel {
+    background: #fff;
+    border: 1px solid #dce1ea;
+    color: #596575;
+}
+
+.edit-member-cancel:hover {
+    background: #f5f7fa;
+}
+
+.edit-member-save {
+    border: 1px solid #1769da;
+    background: #1769da;
+    color: #fff;
+}
+
+.edit-member-save:hover {
+    background: #125abd;
+}
+
+.edit-member-save:disabled,
+.edit-member-cancel:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   MAIN GRID
+========================================== */
+
+.edit-member-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 14px;
+
+    align-items: start;
+}
+
+.edit-member-left,
+.edit-member-right {
+    min-width: 0;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.edit-card {
+    background: #fff;
+
+    border: 1px solid #dfe4ec;
+    border-radius: 7px;
+
+    margin-bottom: 14px;
+
+    overflow: hidden;
+}
+
+.edit-card-header {
+    min-height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 12px;
+
+    background: #faf9ff;
+
+    border-bottom: 1px solid #e5e8ef;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #182230;
+}
+
+.edit-card-header > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-card-header i {
+    color: #6874c9;
+    font-size: 13px;
+}
+
+.edit-card-body {
+    padding: 14px;
+}
+
+
+/* ==========================================
+   PHOTO
+========================================== */
+
+.edit-photo-section {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding-bottom: 14px;
+    margin-bottom: 13px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.edit-photo-wrapper {
+    width: 64px;
+    height: 64px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 1px solid #d9deea;
+
+    background: #f3f5fb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.edit-profile-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef1ff;
+
+    color: #5865b5;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.edit-change-photo {
+    color: #1769da;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-change-photo:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   FORM FIELDS
+========================================== */
+
+.edit-field {
+    min-width: 0;
+    margin-bottom: 11px;
+}
+
+.edit-field label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    color: #596575;
+}
+
+.edit-field label span {
+    margin-left: 2px;
+    color: #dc3545;
+}
+
+.edit-field input,
+.edit-field select {
+    width: 100%;
+    height: 34px;
+
+    padding: 0 9px;
+
+    border: 1px solid #d8dee8;
+    border-radius: 5px;
+
+    background: #fff;
+
+    color: #303b4a;
+
+    font-size: 10px;
+
+    outline: none;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.edit-field input::placeholder {
+    color: #a0a9b7;
+}
+
+.edit-field input:focus,
+.edit-field select:focus {
+    border-color: #7185e5;
+    box-shadow: 0 0 0 2px rgba(113, 133, 229, 0.09);
+}
+
+.edit-field select {
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   TWO COLUMN
+========================================== */
+
+.edit-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+/* ==========================================
+   THREE COLUMN
+========================================== */
+
+.edit-three-column {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+/* ==========================================
+   ADDRESS
+========================================== */
+
+.edit-section-label {
+    margin: 3px 0 9px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    color: #344054;
+}
+
+.edit-address-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 0.7fr;
+    gap: 10px;
+}
+
+
+/* ==========================================
+   INPUT ICON
+========================================== */
+
+.edit-input-icon {
+    position: relative;
+}
+
+.edit-input-icon i {
+    position: absolute;
+
+    left: 9px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 2;
+
+    color: #8c96a5;
+
+    font-size: 10px;
+
+    pointer-events: none;
+}
+
+.edit-input-icon input {
+    padding-left: 27px;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.edit-status-box {
+    width: 100%;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 9px;
+
+    border: 1px solid #d8dee8;
+    border-radius: 5px;
+
+    background: #f8fafc;
+}
+
+.edit-status-box span {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 3px 8px;
+
+    border-radius: 20px;
+
+    background: #e8f7ee;
+    color: #168447;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   AUTO RENEW
+========================================== */
+
+.edit-auto-renew {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 3px;
+    padding-top: 12px;
+
+    border-top: 1px solid #edf0f4;
+}
+
+.edit-auto-renew > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.edit-auto-renew strong {
+    font-size: 10px;
+    color: #303b4a;
+}
+
+.edit-auto-renew span {
+    font-size: 8px;
+    color: #9099a8;
+}
+
+.edit-auto-renew .form-check {
+    margin: 0;
+}
+
+.edit-auto-renew .form-check-input {
+    width: 30px;
+    height: 16px;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   SUBSCRIPTION
+========================================== */
+
+.subscription-body {
+    padding: 13px;
+}
+
+.subscription-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 0;
+}
+
+.subscription-row span {
+    color: #7c8796;
+    font-size: 9px;
+}
+
+.subscription-row strong {
+    color: #374151;
+    font-size: 9px;
+}
+
+.subscription-divider {
+    height: 1px;
+    margin: 7px 0;
+
+    background: #e9edf2;
+}
+
+.subscription-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscription-total span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.subscription-total strong {
+    color: #1769da;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.subscription-duration {
+    margin-top: 6px;
+
+    font-size: 8px;
+    color: #9099a8;
+    text-align: right;
+}
+
+
+/* ==========================================
+   PAYMENT METHOD
+========================================== */
+
+.payment-method-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+
+    border: 1px solid #e1e6ee;
+    border-radius: 6px;
+
+    background: #fafbfc;
+}
+
+.payment-method-icon {
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: #eef2ff;
+    color: #5d6bc0;
+
+    font-size: 14px;
+}
+
+.payment-method-box > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.payment-method-box span {
+    font-size: 8px;
+    color: #8a94a3;
+}
+
+.payment-method-box strong {
+    font-size: 10px;
+    color: #344054;
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.edit-member-error {
+    margin-top: 12px;
+
+    padding: 10px 12px;
+
+    border: 1px solid #f1b5bc;
+    border-radius: 6px;
+
+    background: #fff3f4;
+    color: #b42318;
+
+    font-size: 10px;
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.edit-member-loading {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #7c8798;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .edit-member-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edit-member-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .edit-member-right .edit-card {
+        margin-bottom: 0;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .edit-member-page {
+        padding: 15px;
+    }
+
+    .edit-member-header {
+        flex-direction: column;
+    }
+
+    .edit-member-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .edit-member-right {
+        display: block;
+    }
+
+    .edit-member-right .edit-card {
+        margin-bottom: 14px;
+    }
+
+    .edit-two-column,
+    .edit-three-column,
+    .edit-address-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .edit-member-header h1 {
+        font-size: 19px;
+    }
+
+    .edit-member-actions {
+        width: 100%;
+    }
+
+    .edit-member-cancel,
+    .edit-member-save {
+        flex: 1;
+    }
+
+    .edit-card-body {
+        padding: 11px;
+    }
+
+}

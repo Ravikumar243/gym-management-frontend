@@ -1,0 +1,749 @@
+
+
+.membership-plans-page {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    padding: 18px;
+    min-height: 100%;
+    background: #faf9ff;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.membership-plans-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.membership-plans-header h1 {
+    margin: 0;
+
+    color: #171c26;
+
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.membership-plans-header p {
+    margin: 6px 0 0;
+
+    color: #697386;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ADD PLAN BUTTON
+========================================================= */
+
+.add-plan-btn {
+    height: 38px;
+
+    padding: 0 17px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #075dcc;
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.add-plan-btn i {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.plans-table-card {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border: 1px solid #e1e3ec;
+    border-radius: 9px;
+}
+
+.plans-table-header,
+.plans-table-row {
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1.1fr
+        1fr
+        1.4fr
+        1.1fr
+        0.8fr;
+
+    align-items: center;
+}
+
+.plans-table-header {
+    min-height: 48px;
+
+    padding: 0 18px;
+
+    background: #f1f1fb;
+
+    border-bottom: 1px solid #e1e3ec;
+
+    color: #42506a;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.plans-table-row {
+    min-height: 76px;
+
+    padding: 0 18px;
+
+    border-bottom: 1px solid #eeeeF4;
+
+    color: #1f2937;
+
+    font-size: 11px;
+}
+
+.plans-table-row:last-of-type {
+    border-bottom: none;
+}
+
+.plans-table-row:hover {
+    background: #fafbff;
+}
+
+
+/* =========================================================
+   PLAN NAME
+========================================================= */
+
+.plan-name-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.plan-name-column strong {
+    color: #182033;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.plan-name-column span {
+    color: #687286;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ACTIVE MEMBERS
+========================================================= */
+
+.active-members {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 11px;
+}
+
+.active-members span {
+    width: 8px;
+    height: 8px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #075dcc;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.plan-status {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 54px;
+    height: 24px;
+
+    padding: 0 10px;
+
+    border-radius: 12px;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.plan-status.active {
+    background: #dce7ff;
+    color: #2757b7;
+}
+
+.plan-status.inactive {
+    background: #eeeeF5;
+    color: #747b89;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.plan-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.plan-actions button {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e0e3ea;
+    border-radius: 6px;
+
+    background: #fff;
+
+    color: #596477;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.plan-actions button:hover {
+    background: #f3f6ff;
+    color: #075dcc;
+}
+
+
+/* =========================================================
+   TABLE FOOTER
+========================================================= */
+
+.plans-table-footer {
+    min-height: 54px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+
+    color: #657086;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   LOADING / EMPTY
+========================================================= */
+
+.plans-loading,
+.plans-empty {
+    min-height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #727b8d;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.plan-error {
+    margin-bottom: 12px;
+
+    padding: 9px 11px;
+
+    border: 1px solid #f1b9b9;
+    border-radius: 5px;
+
+    background: #fff1f1;
+
+    color: #d32f2f;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   MODAL OVERLAY
+========================================================= */
+
+.plan-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(20, 24, 32, 0.48);
+
+    backdrop-filter: blur(3px);
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.plan-modal {
+    width: 100%;
+    max-width: 440px;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   MODAL HEADER
+========================================================= */
+
+.plan-modal-header {
+    min-height: 74px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 16px 20px 13px;
+
+    border-bottom: 1px solid #e7e9ef;
+}
+
+.plan-modal-header h2 {
+    margin: 0;
+
+    color: #20242d;
+
+    font-size: 19px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+.plan-modal-header p {
+    margin: 5px 0 0;
+
+    color: #7c8492;
+
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+.plan-modal-close {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: #69717f;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.plan-modal-close:hover {
+    background: #f1f3f7;
+}
+
+
+/* =========================================================
+   MODAL BODY
+========================================================= */
+
+.plan-modal-body {
+    padding: 20px 20px 14px;
+}
+
+.plan-form-group {
+    margin-bottom: 17px;
+}
+
+.plan-form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #303641;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.plan-form-group input,
+.plan-form-group select,
+.plan-form-group textarea {
+    width: 100%;
+
+    height: 40px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #d9dee7;
+    border-radius: 7px;
+
+    background-color: #fff;
+    color: #303641;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    outline: none;
+    box-shadow: none;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+.plan-form-group select {
+    appearance: auto;
+}
+
+.plan-form-group input:focus,
+.plan-form-group select:focus,
+.plan-form-group textarea:focus {
+    border-color: #1769da;
+
+    box-shadow: 0 0 0 3px rgba(23, 105, 218, 0.09);
+}
+
+.plan-form-group select:hover {
+    border-color: #b8c0cd;
+}
+
+.plan-form-group select option {
+    font-size: 12px;
+    color: #303641;
+    background: #fff;
+}
+
+.plan-form-group input {
+    height: 40px;
+
+    padding: 8px 12px;
+}
+
+.plan-form-group textarea {
+    height: 82px;
+
+    padding: 10px 12px;
+
+    resize: none;
+}
+
+.plan-form-group input::placeholder,
+.plan-form-group textarea::placeholder {
+    color: #a1a8b4;
+
+    font-size: 12px;
+}
+
+.plan-form-group input:focus,
+.plan-form-group textarea:focus {
+    border-color: #1769da;
+
+    box-shadow: 0 0 0 3px rgba(23, 105, 218, 0.09);
+}
+
+
+/* =========================================================
+   DURATION + PRICE
+========================================================= */
+
+.plan-form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+}
+
+.plan-input-icon {
+    position: relative;
+}
+
+.plan-input-icon > i,
+.plan-input-icon > span {
+    position: absolute;
+
+    left: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #7b8492;
+
+    font-size: 12px;
+
+    z-index: 1;
+}
+
+.plan-input-icon input {
+    padding-left: 31px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.plan-status-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 5px;
+
+    border-top: 1px solid #edf0f4;
+}
+
+.plan-status-row label {
+    margin: 15px 0 3px;
+
+    color: #303641;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.plan-status-row p {
+    margin: 0;
+
+    color: #7f8794;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   SWITCH
+========================================================= */
+
+.plan-switch {
+    position: relative;
+
+    width: 40px;
+    height: 23px;
+
+    margin-top: 8px;
+    padding: 0;
+
+    border: 0;
+    border-radius: 20px;
+
+    background: #cbd1da;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.plan-switch span {
+    position: absolute;
+
+    top: 3px;
+    left: 3px;
+
+    width: 17px;
+    height: 17px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    transition: 0.2s;
+}
+
+.plan-switch.active {
+    background: #1769da;
+}
+
+.plan-switch.active span {
+    left: 20px;
+}
+
+
+/* =========================================================
+   MODAL ERROR
+========================================================= */
+
+.plan-create-error {
+    margin-top: 12px;
+
+    padding: 8px 10px;
+
+    border-radius: 5px;
+
+    background: #fff0f0;
+
+    color: #d93025;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   MODAL FOOTER
+========================================================= */
+
+.plan-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 9px;
+
+    padding: 13px 20px;
+
+    background: #f4f5ff;
+
+    border-top: 1px solid #e5e7ef;
+}
+
+.plan-cancel-btn,
+.plan-create-btn {
+    height: 38px;
+
+    padding: 0 16px;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.plan-cancel-btn {
+    border: 1px solid #d9dee7;
+
+    background: #fff;
+
+    color: #454c58;
+}
+
+.plan-create-btn {
+    border: 1px solid #1769da;
+
+    background: #1769da;
+
+    color: #fff;
+}
+
+.plan-create-btn:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .plans-table-card {
+        overflow-x: auto;
+    }
+
+    .plans-table-header,
+    .plans-table-row {
+        min-width: 750px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .membership-plans-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .add-plan-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .plan-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-modal {
+        max-width: calc(100% - 30px);
+    }
+}

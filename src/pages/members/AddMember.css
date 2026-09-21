@@ -1,0 +1,971 @@
+
+
+.add-member-page {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+
+
+.add-member-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-bottom: 16px;
+}
+
+.add-member-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-bottom: 5px;
+
+  font-size: 8px;
+  line-height: 1;
+
+  color: #7d8695;
+}
+
+.add-member-breadcrumb i {
+  font-size: 6px;
+}
+
+.add-member-breadcrumb span:last-child {
+  color: #1769da;
+}
+
+.add-member-header h1 {
+  margin: 0;
+
+  color: #171c26;
+
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.add-member-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.add-member-actions button {
+  height: 32px;
+
+  padding: 0 12px;
+
+  border-radius: 5px;
+
+  font-size: 9px !important;
+  line-height: 1;
+
+  font-weight: 500;
+}
+
+.add-member-cancel {
+  border: 1px solid #dce1e8 !important;
+
+  background: #fff !important;
+
+  color: #303744 !important;
+}
+
+.add-member-save {
+  background: #1769da !important;
+
+  border-color: #1769da !important;
+
+  color: #fff !important;
+}
+
+
+
+.add-member-page .row {
+  --bs-gutter-x: 20px;
+  --bs-gutter-y: 0;
+}
+
+.member-form-card {
+  width: 100%;
+
+  overflow: hidden;
+
+  margin-bottom: 16px;
+
+  background: #fff;
+
+  border: 1px solid #e0e4eb;
+
+  border-radius: 8px;
+
+  box-shadow: none;
+}
+
+.member-form-card-header {
+  min-height: 34px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 0 13px;
+
+  background: #f0f1fc;
+
+  border-bottom: 1px solid #e1e4ed;
+
+  color: #171c26;
+
+  font-size: 10px !important;
+
+  font-weight: 600;
+}
+
+.member-form-card-header i {
+  width: 13px;
+
+  color: #1769da;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+.member-form-card-body {
+  padding: 13px;
+}
+
+
+/* =========================================================
+   FORM LABEL
+========================================================= */
+
+.member-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #4f5968;
+
+  font-size: 8px !important;
+  line-height: 1.2;
+
+  font-weight: 500;
+}
+
+.member-label span {
+  color: #e53935;
+}
+
+
+.add-member-page input.member-input,
+.add-member-page select.member-input {
+  width: 100%;
+
+  height: 29px !important;
+  min-height: 29px !important;
+
+  padding: 4px 8px !important;
+
+  border: 1px solid #dce1e9 !important;
+
+  border-radius: 4px !important;
+
+  background-color: #fff;
+
+  color: #353d4a;
+
+  font-family: inherit;
+
+  font-size: 8px !important;
+  line-height: 1.2 !important;
+
+  box-shadow: none !important;
+}
+
+.add-member-page input.member-input:focus,
+.add-member-page select.member-input:focus {
+  border-color: #7ca9ed !important;
+
+  box-shadow:
+    0 0 0 2px rgba(23, 105, 218, 0.08) !important;
+
+  outline: none;
+}
+
+.add-member-page input.member-input::placeholder {
+  color: #9aa1ad;
+
+  font-size: 8px !important;
+
+  opacity: 1;
+}
+
+
+
+.add-member-page select.member-input {
+  cursor: pointer;
+
+  padding-right: 25px !important;
+}
+
+
+
+.add-member-page input[type="date"].member-input {
+  padding-right: 7px !important;
+}
+
+
+
+
+.member-photo-wrapper {
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding-top: 1px;
+}
+
+.member-photo {
+  width: 53px;
+  height: 53px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ccd3e2;
+
+  border-radius: 50%;
+
+  background: #eef0f8;
+
+  color: #657087;
+
+  font-size: 16px;
+}
+
+.member-photo-wrapper span {
+  margin-top: 6px;
+
+  color: #747d8c;
+
+  font-size: 7px !important;
+  line-height: 1;
+}
+
+
+/* =========================================================
+   FIELD SPACING
+========================================================= */
+
+.member-field {
+  margin-top: 12px;
+}
+
+
+/* =========================================================
+   EXPIRY
+========================================================= */
+
+.expiry-input {
+  background: #eeeef8 !important;
+
+  color: #667085 !important;
+
+  opacity: 1 !important;
+}
+
+
+/* =========================================================
+   PAYMENT SUMMARY
+========================================================= */
+
+.payment-summary {
+  padding: 9px;
+
+  border-radius: 6px;
+
+  background: #eeeef8;
+}
+
+.payment-row {
+  min-height: 21px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  color: #697283;
+
+  font-size: 8px !important;
+}
+
+.payment-row strong {
+  color: #252b36;
+
+  font-size: 8px !important;
+
+  font-weight: 600;
+}
+
+.discount-input {
+  width: 48px !important;
+  height: 21px !important;
+
+  padding: 2px 5px !important;
+
+  border: 1px solid #d9dce6 !important;
+
+  border-radius: 3px;
+
+  background: #fff;
+
+  color: #252b36;
+
+  text-align: right;
+
+  font-size: 8px !important;
+
+  outline: none;
+}
+
+.payment-total {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 4px;
+
+  padding-top: 7px;
+
+  border-top: 1px solid #d9dbe7;
+
+  color: #171c26;
+
+  font-size: 10px !important;
+}
+
+.payment-total strong {
+  font-size: 10px !important;
+}
+
+
+/* =========================================================
+   RADIO
+========================================================= */
+
+.payment-radio-group {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.payment-radio-group label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  color: #586171;
+
+  font-size: 8px !important;
+
+  cursor: pointer;
+}
+
+.payment-radio-group input {
+  width: 10px !important;
+  height: 10px !important;
+
+  margin: 0;
+
+  accent-color: #1769da;
+}
+
+.amount-paid-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.amount-paid-wrapper .amount-prefix {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    color: #5f6b7a;
+    font-size: 15px;
+    font-weight: 500;
+
+    pointer-events: none;
+}
+
+.amount-paid-wrapper .amount-paid-input {
+    width: 100%;
+    height: 40px;
+
+    padding: 8px 12px 8px 34px !important;
+
+    border: 1px solid #d5dbe5 !important;
+    border-radius: 8px !important;
+
+    background: #fff;
+    color: #303641;
+
+    outline: none !important;
+    box-shadow: none !important;
+
+    font-size: 14px;
+}
+
+.amount-paid-wrapper .amount-paid-input:focus {
+    border-color: #1769da !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(23, 105, 218, 0.09) !important;
+}
+
+.amount-paid-wrapper .amount-paid-input::placeholder {
+    color: #9aa4b2;
+}
+
+.payment-status-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    margin-top: 12px;
+    padding: 10px 12px;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #1f2937;
+}
+
+.payment-status-info i {
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.payment-status-info strong {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   AUTO RENEW
+========================================================= */
+
+.auto-renew-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 14px;
+
+  color: #555e6d;
+
+  font-size: 8px !important;
+}
+
+.auto-renew-row .form-check {
+  min-height: auto;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.auto-renew-row .form-check-input {
+  width: 27px !important;
+  height: 14px !important;
+
+  margin: 0 !important;
+
+  cursor: pointer;
+}
+
+.auto-renew-row .form-check-input:checked {
+  background-color: #1769da;
+
+  border-color: #1769da;
+}
+
+
+/* =========================================================
+   EMERGENCY
+========================================================= */
+
+.emergency-card {
+  margin-bottom: 0;
+}
+
+
+
+.add-member-page .col-lg-4 .member-form-card {
+  margin-bottom: 16px;
+}
+
+
+
+@media (max-width: 1100px) {
+
+  .add-member-page {
+    max-width: 100%;
+  }
+
+}
+
+
+@media (max-width: 991px) {
+
+  .add-member-header {
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .add-member-header {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .add-member-actions {
+    width: 100%;
+  }
+
+  .add-member-actions button {
+    flex: 1;
+  }
+
+  .member-photo-wrapper {
+    margin-bottom: 5px;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .add-member-page .member-form-card-body {
+    padding: 12px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .add-member-page {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+.add-member-breadcrumb {
+  gap: 7px;
+  margin-bottom: 7px;
+
+  font-size: 10px !important;
+  line-height: 1.2;
+}
+
+.add-member-breadcrumb i {
+  font-size: 8px !important;
+}
+
+.add-member-header h1 {
+  font-size: 26px !important;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.add-member-actions {
+  gap: 10px;
+}
+
+.add-member-actions button {
+  height: 38px !important;
+
+  padding: 0 17px !important;
+
+  border-radius: 6px !important;
+
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+
+.member-form-card {
+  margin-bottom: 18px;
+
+  border-radius: 10px;
+
+  border: 1px solid #e0e4eb;
+
+  box-shadow: 0 2px 8px rgba(23, 28, 38, 0.03);
+}
+
+.member-form-card-header {
+  min-height: 44px !important;
+
+  padding: 0 16px !important;
+
+  gap: 9px;
+
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+.member-form-card-header i {
+  width: 16px;
+
+  font-size: 14px !important;
+}
+
+.member-form-card-body {
+  padding: 18px !important;
+}
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.member-label {
+  margin-bottom: 7px !important;
+
+  color: #424b5a;
+
+  font-size: 11px !important;
+  line-height: 1.3;
+
+  font-weight: 500;
+}
+
+.member-label span {
+  font-size: 11px;
+}
+
+
+.add-member-page input.member-input,
+.add-member-page select.member-input {
+  width: 100%;
+
+  height: 38px !important;
+  min-height: 38px !important;
+
+  padding: 7px 11px !important;
+
+  border: 1px solid #d7dce5 !important;
+
+  border-radius: 6px !important;
+
+  background-color: #fff;
+
+  color: #303846;
+
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.add-member-page input.member-input::placeholder {
+  color: #9aa3b2;
+
+  font-size: 12px !important;
+
+  opacity: 1;
+}
+
+.add-member-page input.member-input:focus,
+.add-member-page select.member-input:focus {
+  border-color: #1769da !important;
+
+  box-shadow: 0 0 0 3px rgba(23, 105, 218, 0.10) !important;
+
+  outline: none;
+}
+
+/* SELECT */
+.add-member-page select.member-input {
+  padding-right: 32px !important;
+
+  cursor: pointer;
+}
+
+/* DATE */
+.add-member-page input[type="date"].member-input {
+  padding-right: 10px !important;
+}
+
+/* =========================================================
+   FIELD SPACING
+   ========================================================= */
+
+.member-field {
+  margin-top: 16px !important;
+}
+
+/* =========================================================
+   PHOTO
+   ========================================================= */
+
+.member-photo {
+  width: 64px !important;
+  height: 64px !important;
+
+  border: 1px solid #ccd5e5;
+
+  font-size: 19px !important;
+
+  transition: all 0.2s ease;
+}
+
+.member-photo:hover {
+  border-color: #1769da;
+
+  background: #f0f5ff;
+
+  transform: scale(1.03);
+}
+
+.member-photo-wrapper span {
+  margin-top: 8px;
+
+  color: #667085;
+
+  font-size: 10px !important;
+  line-height: 1.2;
+}
+
+/* =========================================================
+   PAYMENT
+   ========================================================= */
+
+.payment-summary {
+  padding: 12px !important;
+
+  border-radius: 8px;
+}
+
+.payment-row {
+  min-height: 28px;
+
+  color: #697586;
+
+  font-size: 11px !important;
+}
+
+.payment-row strong {
+  color: #252b36;
+
+  font-size: 11px !important;
+
+  font-weight: 600;
+}
+
+.discount-input {
+  width: 62px !important;
+  height: 30px !important;
+
+  padding: 5px 8px !important;
+
+  border-radius: 5px !important;
+
+  font-size: 11px !important;
+}
+
+.payment-total {
+  margin-top: 6px;
+
+  padding-top: 9px;
+
+  font-size: 13px !important;
+}
+
+.payment-total strong {
+  font-size: 14px !important;
+}
+
+/* =========================================================
+   PAYMENT RADIO
+   ========================================================= */
+
+.payment-radio-group {
+  gap: 18px;
+}
+
+.payment-radio-group label {
+  gap: 6px;
+
+  color: #4f5968;
+
+  font-size: 11px !important;
+}
+
+.payment-radio-group input {
+  width: 13px !important;
+  height: 13px !important;
+}
+
+/* =========================================================
+   AUTO RENEW
+   ========================================================= */
+
+.auto-renew-row {
+  margin-top: 16px;
+
+  color: #555e6d;
+
+  font-size: 11px !important;
+}
+
+.auto-renew-row .form-check-input {
+  width: 34px !important;
+  height: 18px !important;
+}
+
+/* =========================================================
+   ERROR MESSAGE
+   ========================================================= */
+
+.add-member-page small.text-danger {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 10px !important;
+}
+
+/* =========================================================
+   ASSIGNED TRAINER DROPDOWN
+========================================================= */
+
+/* Assigned Trainer Dropdown */
+.add-member-page .trainer-dropdown {
+  width: 100%;
+
+  height: 29px !important;
+  min-height: 29px !important;
+
+  padding: 4px 28px 4px 8px !important;
+
+  border: 1px solid #dce1e9 !important;
+  border-radius: 4px !important;
+
+  background-color: #fff !important;
+  color: #353d4a;
+
+  font-family: inherit;
+
+  /* increased */
+  font-size: 11px !important;
+
+  line-height: 1.2 !important;
+
+  outline: none;
+  cursor: pointer;
+
+  box-shadow: none !important;
+}
+
+/* Dropdown options */
+.add-member-page .trainer-dropdown option {
+  font-size: 11px !important;
+  color: #353d4a;
+  background: #fff;
+}
+
+/* Hover */
+.add-member-page .trainer-dropdown:hover {
+  border-color: #aeb9c9 !important;
+}
+
+/* Focus */
+.add-member-page .trainer-dropdown:focus {
+  border-color: #7ca9ed !important;
+
+  box-shadow:
+    0 0 0 2px rgba(23, 105, 218, 0.08) !important;
+
+  outline: none;
+}
+
+/* Disabled - before Membership Plan is selected */
+.add-member-page .trainer-dropdown:disabled {
+  background-color: #f1f2f6 !important;
+
+  color: #9aa1ad !important;
+
+  border-color: #e0e3e9 !important;
+
+  cursor: not-allowed;
+
+  opacity: 1;
+}
+
+
+
+.add-member-page .trainer-dropdown option:first-child {
+  color: #9aa1ad;
+}
+
+
+@media (max-width: 768px) {
+
+  .add-member-header h1 {
+    font-size: 23px !important;
+  }
+
+  .member-form-card-header {
+    font-size: 12px !important;
+  }
+
+  .member-form-card-body {
+    padding: 15px !important;
+  }
+
+  .member-label {
+    font-size: 11px !important;
+  }
+
+  .add-member-page input.member-input,
+  .add-member-page select.member-input {
+    height: 38px !important;
+  }
+}

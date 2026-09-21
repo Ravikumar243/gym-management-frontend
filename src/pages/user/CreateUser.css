@@ -1,0 +1,689 @@
+.create-user-page {
+    min-height: 100vh;
+    background: #f8f7fc;
+    padding: 18px 24px 40px;
+    color: #171724;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.create-user-breadcrumb {
+    font-size: 11px;
+    color: #77758a;
+    margin-bottom: 18px;
+}
+
+.create-user-breadcrumb span {
+    margin: 0 7px;
+    color: #aaa8b8;
+}
+
+.create-user-breadcrumb strong {
+    color: #242232;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.create-user-header {
+    margin-bottom: 18px;
+}
+
+.create-user-header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #161522;
+}
+
+.create-user-header p {
+    margin: 4px 0 0;
+    font-size: 11px;
+    color: #77758a;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.create-user-card {
+    background: #ffffff;
+    border: 1px solid #dedce7;
+    border-radius: 7px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.section-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #28263a;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   ROLE OPTIONS
+========================================= */
+
+.role-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.role-card {
+    min-height: 70px;
+    border: 1px solid #dcdbe5;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #fff;
+}
+
+.role-card:hover {
+    border-color: #8aaeff;
+}
+
+.role-card.selected {
+    border-color: #78a4ff;
+    background: #f8faff;
+    box-shadow: 0 0 0 1px rgba(70, 125, 255, 0.05);
+}
+
+
+/* Radio */
+
+.role-radio {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border: 1px solid #9c9baa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role-card.selected .role-radio {
+    border-color: #2563eb;
+}
+
+.role-card.selected .role-radio span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #2563eb;
+}
+
+
+/* Icon */
+
+.role-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f3f4f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5c6070;
+    font-size: 13px;
+}
+
+.role-card.selected .role-icon {
+    color: #2563eb;
+    background: #edf3ff;
+}
+
+
+/* Role content */
+
+.role-content {
+    min-width: 0;
+}
+
+.role-title {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.role-description {
+    font-size: 8px;
+    line-height: 1.35;
+    color: #77758a;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: #252333;
+}
+
+.section-header p {
+    margin: 4px 0 0;
+    font-size: 9px;
+    color: #858394;
+}
+
+.access-badge,
+.required-badge {
+    white-space: nowrap;
+    font-size: 8px;
+    border-radius: 10px;
+    padding: 4px 8px;
+    background: #edf2ff;
+    color: #5275c5;
+    border: 1px solid #d8e2ff;
+}
+
+.required-badge {
+    background: #f5f1ff;
+    border-color: #e3dcff;
+    color: #6e56b5;
+}
+
+
+/* =========================================
+   INFO MESSAGE
+========================================= */
+
+.info-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    padding: 9px 10px;
+    background: #f3f6ff;
+    border: 1px solid #dce5ff;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    color: #54627e;
+    font-size: 8px;
+    line-height: 1.45;
+}
+
+.info-message i {
+    color: #557be0;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.form-group {
+    min-width: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 9px;
+    color: #4d4a5b;
+    font-weight: 500;
+}
+
+.form-group label span {
+    color: #dc3545;
+    margin-left: 2px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 32px;
+    padding: 5px 8px;
+    border: 1px solid #cfcdd8;
+    border-radius: 3px;
+    outline: none;
+    background: #fff;
+    color: #242230;
+    font-size: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #a6a4af;
+}
+
+.form-group input:focus {
+    border-color: #6d9cff;
+    box-shadow: 0 0 0 2px rgba(70, 125, 255, 0.08);
+}
+
+
+/* =========================================
+   GYM NOTE
+========================================= */
+
+.gym-info-note {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #faf9ff;
+    border: 1px solid #e7e3f5;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 8px;
+    color: #777386;
+}
+
+.gym-info-note i {
+    color: #705ac0;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   ALERT
+========================================= */
+
+.form-alert {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 10px;
+    border-radius: 5px;
+    font-size: 9px;
+    margin-bottom: 12px;
+}
+
+.form-alert.error {
+    color: #a52935;
+    background: #fff2f3;
+    border: 1px solid #f4ced2;
+}
+
+.form-alert.success {
+    color: #247044;
+    background: #effbf3;
+    border: 1px solid #ccebd5;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.create-user-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding-top: 4px;
+}
+
+.btn-cancel,
+.btn-create {
+    height: 32px;
+    padding: 0 15px;
+    border-radius: 4px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-cancel {
+    background: #fff;
+    color: #4c4a57;
+    border: 1px solid #d0ced8;
+}
+
+.btn-cancel:hover {
+    background: #f6f5f8;
+}
+
+.btn-create {
+    background: #2563eb;
+    color: #fff;
+    border: 1px solid #2563eb;
+}
+
+.btn-create:hover {
+    background: #1d4ed8;
+}
+
+.btn-create:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/* =========================================
+ACCESS & SUBSCRIPTION
+========================================= */
+
+.access-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.access-card {
+    min-height: 58px;
+    border: 1px solid #dcdbe5;
+    border-radius: 6px;
+    padding: 9px 10px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #fff;
+}
+
+.access-card:hover {
+    border-color: #8aaeff;
+}
+
+.access-card.selected {
+    border-color: #78a4ff;
+    background: #f8faff;
+    box-shadow: 0 0 0 1px rgba(70, 125, 255, 0.05);
+}
+
+.access-radio {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border: 1px solid #9c9baa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.access-card.selected .access-radio {
+    border-color: #2563eb;
+}
+
+.access-card.selected .access-radio span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #2563eb;
+}
+
+.access-icon {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: #f3f4f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5c6070;
+    font-size: 12px;
+}
+
+.access-card.selected .access-icon {
+    color: #2563eb;
+    background: #edf3ff;
+}
+
+.access-content {
+    min-width: 0;
+}
+
+.access-title {
+    font-size: 10px;
+    font-weight: 600;
+    color: #28263a;
+    margin-bottom: 2px;
+}
+
+.access-description {
+    font-size: 8px;
+    line-height: 1.35;
+    color: #77758a;
+}
+
+/* =========================================
+ACCESS CONDITIONAL FIELDS
+========================================= */
+
+.access-fields {
+    background: #fafbff;
+    border: 1px solid #e2e6f2;
+    border-radius: 6px;
+    padding: 11px;
+    margin-top: 4px;
+}
+
+/* =========================================
+SELECT
+========================================= */
+
+.form-group select {
+    width: 100%;
+    height: 32px;
+    padding: 5px 8px;
+    border: 1px solid #cfcdd8;
+    border-radius: 3px;
+    outline: none;
+    background: #fff;
+    color: #242230;
+    font-size: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group select:focus {
+    border-color: #6d9cff;
+    box-shadow: 0 0 0 2px rgba(70, 125, 255, 0.08);
+}
+
+/* =========================================
+AMOUNT INPUT
+========================================= */
+
+.amount-input-wrapper {
+    position: relative;
+}
+
+.amount-prefix {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: #666475;
+    pointer-events: none;
+}
+
+.amount-input-wrapper input {
+    padding-left: 22px;
+}
+
+/* =========================================
+SUBSCRIPTION SUMMARY
+========================================= */
+
+.subscription-summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f3f6ff;
+    border: 1px solid #dce5ff;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    color: #54627e;
+    font-size: 8px;
+}
+
+.subscription-summary i {
+    color: #557be0;
+    font-size: 11px;
+}
+
+.subscription-summary strong {
+    color: #303b59;
+    font-weight: 600;
+}
+
+/* =========================================
+DEMO BADGE
+========================================= */
+
+.demo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 8px;
+    padding: 3px 7px;
+    border-radius: 10px;
+    background: #fff8e8;
+    border: 1px solid #f2dfad;
+    color: #9a741c;
+}
+
+.subscription-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 8px;
+    padding: 3px 7px;
+    border-radius: 10px;
+    background: #effbf3;
+    border: 1px solid #ccebd5;
+    color: #247044;
+}
+
+/* =========================================
+RESPONSIVE ACCESS
+========================================= */
+
+@media (max-width: 768px) {
+
+    .access-options {
+        grid-template-columns: 1fr;
+    }
+
+    .access-fields {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .access-card {
+        min-height: 55px;
+        padding: 8px;
+    }
+
+    .access-title {
+        font-size: 10px;
+    }
+
+    .access-description {
+        font-size: 8px;
+    }
+
+    .access-fields {
+        padding: 9px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .create-user-page {
+        padding: 15px;
+    }
+
+    .role-options {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .create-user-footer {
+        width: 100%;
+    }
+
+    .btn-cancel,
+    .btn-create {
+        flex: 1;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    .create-user-page {
+        padding: 12px;
+    }
+
+    .create-user-header h1 {
+        font-size: 19px;
+    }
+
+    .create-user-card {
+        padding: 11px;
+    }
+
+    .role-card {
+        min-height: 65px;
+    }
+
+    .role-description {
+        font-size: 8px;
+    }
+
+    .create-user-footer {
+        flex-direction: column-reverse;
+    }
+
+    .btn-cancel,
+    .btn-create {
+        width: 100%;
+    }
+}

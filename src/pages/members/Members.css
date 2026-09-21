@@ -1,0 +1,1528 @@
+
+
+.members-page {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+
+.members-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.members-header h1 {
+    margin: 0;
+
+    color: #171c26;
+
+    font-size: 26px;
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+.members-header p {
+    margin: 6px 0 0;
+
+    color: #7d8695;
+
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+========================================================= */
+
+.members-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.members-header-actions button {
+    height: 38px;
+
+    padding: 0 16px;
+
+    border-radius: 6px;
+
+    font-size: 12px !important;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.members-export-btn {
+    border: 1px solid #dce1e8;
+
+    background: #fff;
+
+    color: #303744;
+}
+
+.members-export-btn:hover {
+    background: #f7f8fa;
+    border-color: #c9ced8;
+}
+
+.members-add-btn {
+    border: 1px solid #1769da;
+
+    background: #1769da;
+
+    color: #fff;
+}
+
+.members-add-btn:hover {
+    background: #125bc0;
+    border-color: #125bc0;
+}
+
+.members-header-actions i {
+    margin-right: 6px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   FILTER CARD
+========================================================= */
+
+.members-filter-card {
+    min-height: 54px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 8px 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #dce1e9;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.03);
+}
+
+.members-filter-card select {
+    width: 120px;
+
+    height: 34px;
+
+    padding: 0 10px;
+
+    border: 1px solid #dce1e9;
+
+    border-radius: 6px;
+
+    background: #fff;
+
+    color: #344054;
+
+    font-size: 11px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: border-color 0.2s ease;
+}
+
+.members-filter-card select:focus {
+    border-color: #1769da;
+
+    box-shadow: 0 0 0 2px rgba(23, 105, 218, 0.08);
+}
+
+.members-filter-card select:nth-child(2) {
+    width: 135px;
+}
+
+.members-filter-card select:nth-child(3) {
+    width: 105px;
+}
+
+.members-count {
+    margin-left: auto;
+
+    color: #667085;
+
+    font-size: 11px;
+}
+
+.members-count strong {
+    color: #344054;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLE CARD
+========================================================= */
+
+.members-table-card {
+    width: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid #dce1e9;
+
+    border-radius: 9px;
+
+    background: #fff;
+
+    box-shadow: 0 2px 6px rgba(16, 24, 40, 0.03);
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.members-table-header,
+.members-table-row {
+    display: grid;
+
+    grid-template-columns:
+        1.25fr
+        1.35fr
+        1fr
+        1fr
+        0.8fr
+        0.35fr;
+
+    align-items: center;
+}
+
+.members-table-header {
+    min-height: 48px;
+
+    padding: 0 18px;
+
+    background: #f0f1fc;
+
+    border-bottom: 1px solid #dce1e9;
+
+    color: #526078;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2px;
+}
+
+.members-table-row {
+    min-height: 76px;
+
+    padding: 0 18px;
+
+    border-bottom: 1px solid #edf0f4;
+
+    color: #263142;
+
+    font-size: 11px;
+
+    transition: background 0.15s ease;
+}
+
+.members-table-row:hover {
+    background: #fafbff;
+}
+
+.members-table-row:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   MEMBER
+========================================================= */
+
+.member-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.member-info img,
+.member-avatar {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+}
+
+.member-info img {
+    object-fit: cover;
+}
+
+.member-avatar {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e8edf7;
+
+    color: #60708b;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.member-info div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.member-info strong {
+    color: #1e2633;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.member-info span {
+    color: #657087;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.member-contact {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.member-contact strong {
+    color: #1769da;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+.member-contact span {
+    color: #566173;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   PLAN
+========================================================= */
+
+.member-plan {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.member-plan strong {
+    color: #283242;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.member-plan span {
+    color: #667085;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.member-status {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 5px;
+}
+
+.member-status-badge {
+    padding: 5px 9px;
+
+    border-radius: 12px;
+
+    font-size: 9px;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+
+.member-status-badge.active {
+    background: #e5edff;
+
+    color: #1769da;
+}
+
+.member-status-badge.expired {
+    background: #ffe7e7;
+
+    color: #e53935;
+}
+
+.member-status-badge.pending {
+    background: #edf0f7;
+
+    color: #68738a;
+}
+
+.member-status > span:last-child {
+    color: #667085;
+
+    font-size: 9px;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   PAYMENT
+========================================================= */
+
+.member-payment span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 10px;
+
+    font-weight: 500;
+}
+
+.member-payment .paid {
+    color: #159447;
+}
+
+.member-payment .overdue {
+    color: #e53935;
+}
+
+.member-payment .pending {
+    color: #667085;
+}
+
+.member-payment i {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.member-actions {
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+.member-actions button {
+    width: 30px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: #344054;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: all 0.15s ease;
+}
+
+.member-actions button:hover {
+    background: #f1f4f9;
+
+    color: #1769da;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.members-table-footer {
+    min-height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 18px;
+
+    border-top: 1px solid #dce1e9;
+
+    color: #667085;
+
+    font-size: 10px;
+}
+
+.members-table-footer select {
+    margin-left: 6px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #344054;
+
+    font-size: 10px;
+
+    outline: none;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.members-pagination {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 10px;
+}
+
+.members-pagination button {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: #667085;
+
+    cursor: pointer;
+
+    transition: all 0.15s ease;
+}
+
+.members-pagination button:hover:not(:disabled) {
+    background: #f1f4f9;
+
+    color: #1769da;
+}
+
+.members-pagination button:disabled {
+    opacity: 0.4;
+
+    cursor: not-allowed;
+}
+
+.members-pagination .active {
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background: #1769da;
+
+    color: #fff;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   LOADING / EMPTY / ERROR
+========================================================= */
+
+.members-loading,
+.members-empty,
+.members-error {
+    min-height: 220px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #667085;
+
+    font-size: 12px;
+}
+
+.members-error {
+    color: #e53935;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .members-page {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .members-table-card {
+        overflow-x: auto;
+    }
+
+    .members-table-header,
+    .members-table-row {
+        min-width: 950px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .members-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+    .members-header-actions {
+        width: 100%;
+    }
+
+    .members-header-actions button {
+        flex: 1;
+    }
+
+    .members-filter-card {
+        flex-wrap: wrap;
+
+        padding: 10px;
+    }
+
+    .members-filter-card select,
+    .members-filter-card select:nth-child(2),
+    .members-filter-card select:nth-child(3) {
+        width: calc(33.333% - 7px);
+    }
+
+    .members-count {
+        width: 100%;
+
+        margin-left: 0;
+
+        margin-top: 4px;
+
+        text-align: right;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .members-header h1 {
+        font-size: 23px;
+    }
+
+    .members-header p {
+        font-size: 10px;
+    }
+
+    .members-header-actions button {
+        font-size: 11px !important;
+    }
+
+    .members-filter-card select,
+    .members-filter-card select:nth-child(2),
+    .members-filter-card select:nth-child(3) {
+        width: 100%;
+    }
+
+}
+
+/* =========================================================
+   MEMBER ACTIONS
+========================================================= */
+
+.member-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.member-actions button {
+    width: 30px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    color: #344054;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.member-actions button:hover {
+    background: #f1f4f9;
+    color: #1769da;
+}
+
+.member-actions .member-renew-btn {
+    color: #1769da;
+}
+
+.member-actions .member-renew-btn:hover {
+    background: #eaf1ff;
+}
+
+
+/* =========================================================
+   RENEW MODAL OVERLAY
+========================================================= */
+
+.renew-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(20, 24, 35, 0.45);
+
+    backdrop-filter: blur(2px);
+     overflow-y: auto;
+}
+
+
+
+
+.renew-modal {
+    width: 100%;
+    max-width: 850px;
+
+    max-height: calc(100vh - 40px);
+
+    background: #fff;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+@keyframes renewModalOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.99);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.renew-modal-header {
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 20px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.renew-modal-header h2 {
+    margin: 0;
+
+    color: #202733;
+
+    font-size: 17px;
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+.renew-modal-header p {
+    margin: 4px 0 0;
+
+    color: #737d8d;
+
+    font-size: 10px;
+}
+
+.renew-modal-close {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    color: #687386;
+
+    font-size: 14px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.renew-modal-close:hover {
+    background: #f1f3f6;
+    color: #202733;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.renew-modal-body {
+    flex: 1;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    min-height: 0;
+
+    padding: 20px 26px;
+}
+
+
+
+/* =========================================================
+   MEMBER CARD
+========================================================= */
+
+.renew-member-card {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px;
+
+    border: 1px solid #edf0f4;
+
+    border-radius: 7px;
+
+    margin-bottom: 18px;
+}
+
+.renew-member-card img,
+.renew-member-avatar {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+}
+
+.renew-member-card img {
+    object-fit: cover;
+}
+
+.renew-member-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e8edf7;
+
+    color: #60708b;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.renew-member-info {
+    min-width: 0;
+}
+
+.renew-member-name {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.renew-member-name strong {
+    color: #202733;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.renew-active-badge {
+    padding: 3px 7px;
+
+    border-radius: 10px;
+
+    background: #e8f0ff;
+    color: #1769da;
+
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.renew-member-contact {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    margin-top: 4px;
+
+    color: #6d7787;
+
+    font-size: 9px;
+}
+
+.renew-member-contact i {
+    margin-right: 3px;
+
+    font-size: 9px;
+}
+
+.renew-contact-divider {
+    color: #c3c8d0;
+}
+
+
+/* =========================================================
+   PLAN GRID
+========================================================= */
+
+.renew-plan-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+
+    margin-bottom: 18px;
+}
+
+.renew-info-box {
+    padding: 12px;
+
+    border-radius: 7px;
+
+    background: #f0f1fc;
+
+    border: 1px solid #e7e8f5;
+}
+
+.renewal-summary-box {
+    background: #eef1ff;
+
+    border-color: #d8def5;
+}
+
+.renew-box-title {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    margin-bottom: 10px;
+
+    color: #606b7d;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+.renew-box-title i {
+    font-size: 11px;
+}
+
+.renewal-title {
+    color: #1769da;
+}
+
+.renew-current-plan,
+.renew-summary-content {
+    background: #fff;
+
+    border-radius: 4px;
+
+    padding: 10px;
+}
+
+.renew-plan-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+.renew-plan-top strong:first-child {
+    color: #2d3543;
+
+    font-size: 13px;
+}
+
+.renew-plan-top strong:last-child {
+    color: #1769da;
+
+    font-size: 15px;
+}
+
+.renew-detail-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 6px 0;
+
+    border-top: 1px solid #f0f1f4;
+
+    color: #687386;
+
+    font-size: 9px;
+}
+
+.renew-detail-row strong {
+    color: #4a5464;
+
+    font-size: 9px;
+}
+
+.renew-old-expiry {
+    color: #e53935 !important;
+}
+
+.renew-new-expiry {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 6px;
+
+    padding: 8px;
+
+    border-radius: 3px;
+
+    background: #e3ebff;
+
+    color: #1769da;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+.renew-new-expiry strong {
+    font-size: 15px;
+    color: #1769da;
+}
+
+
+/* =========================================================
+   PAYMENT
+========================================================= */
+
+.renew-payment-section {
+    margin-top: 2px;
+}
+
+.renew-payment-title {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    color: #606b7d;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+.renew-payment-title i {
+    font-size: 11px;
+}
+
+.renew-payment-line {
+    height: 1px;
+
+    margin: 7px 0 10px;
+
+    background: #edf0f4;
+}
+
+.renew-payment-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.renew-field label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #5d6878;
+
+    font-size: 9px;
+
+    font-weight: 500;
+}
+
+.renew-field input,
+.renew-field select {
+    width: 100%;
+    height: 31px;
+
+    padding: 0 9px;
+
+    border: 1px solid #dce1e9;
+
+    border-radius: 4px;
+
+    background: #fff;
+
+    color: #344054;
+
+    font-size: 10px;
+
+    outline: none;
+}
+
+.renew-field input:focus,
+.renew-field select:focus {
+    border-color: #1769da;
+
+    box-shadow:
+        0 0 0 2px rgba(
+            23,
+            105,
+            218,
+            0.08
+        );
+}
+
+.renew-input-wrapper {
+    position: relative;
+}
+
+.renew-input-wrapper span {
+    position: absolute;
+
+    left: 9px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #667085;
+
+    font-size: 10px;
+}
+
+.renew-input-wrapper input {
+    padding-left: 25px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.renew-modal-footer {
+    min-height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px;
+
+    background: #f8f9fc;
+
+    border-top: 1px solid #edf0f4;
+}
+
+.renew-paid-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 4px 8px;
+
+    border-radius: 4px;
+
+    background: #edf0f7;
+
+    color: #667085;
+
+    font-size: 8px;
+
+    font-weight: 600;
+}
+
+.renew-paid-badge i {
+    font-size: 9px;
+}
+
+.renew-footer-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.renew-cancel-btn,
+.renew-submit-btn {
+    height: 32px;
+
+    padding: 0 14px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.renew-cancel-btn {
+    border: 1px solid #dce1e9;
+
+    background: #fff;
+
+    color: #344054;
+}
+
+.renew-cancel-btn:hover {
+    background: #f7f8fa;
+}
+
+.renew-submit-btn {
+    border: 1px solid #1769da;
+
+    background: #1769da;
+
+    color: #fff;
+}
+
+.renew-submit-btn:hover:not(:disabled) {
+    background: #125bc0;
+}
+
+.renew-submit-btn:disabled,
+.renew-cancel-btn:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.renew-error {
+    margin: 0 20px 12px;
+
+    padding: 7px 10px;
+
+    border-radius: 4px;
+
+    background: #fff0f0;
+
+    color: #d92d20;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .renew-modal-overlay {
+        padding: 10px;
+    }
+
+    .renew-modal {
+        max-height: 95vh;
+
+        overflow-y: auto;
+    }
+
+    .renew-plan-grid,
+    .renew-payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .renew-modal-header {
+        padding: 14px 15px;
+    }
+
+    .renew-modal-body {
+        padding: 14px 15px;
+    }
+
+    .renew-modal-footer {
+        padding: 10px 15px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .renew-member-contact {
+        flex-wrap: wrap;
+    }
+
+    .renew-contact-divider {
+        display: none;
+    }
+
+    .renew-modal-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .renew-footer-actions {
+        width: 100%;
+    }
+
+    .renew-cancel-btn,
+    .renew-submit-btn {
+        flex: 1;
+    }
+
+}
+
+/* =========================================
+   RENEW MEMBERSHIP - NEW PLAN FIELD
+========================================= */
+
+.renew-field {
+    margin-bottom: 18px;
+}
+
+.renew-field label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.renew-field select,
+.renew-field input {
+    width: 100%;
+    height: 44px;
+    padding: 0 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #fff;
+    color: #1f2937;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.renew-field select {
+    cursor: pointer;
+    appearance: auto;
+}
+
+.renew-field select:focus,
+.renew-field input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.renew-field select:hover,
+.renew-field input:hover {
+    border-color: #9ca3af;
+}
+
+/* Required star */
+
+.renew-field label::after {
+    content: " *";
+    color: #dc3545;
+    font-size: 14px;
+}
+
+/* =========================================
+   PLAN INFO
+========================================= */
+
+.renew-plan-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    margin-top: 8px;
+    padding: 10px 12px;
+
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+
+    font-size: 12px;
+    color: #64748b;
+}
+
+.renew-plan-info strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.renew-field-error {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #dc3545;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .renew-field select,
+    .renew-field input {
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .renew-plan-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,216 @@
+.fitpulse-sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+
+  background: #292d39;
+
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1050;
+
+  transition: width 0.25s ease;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   SIDEBAR WIDTH
+========================= */
+
+.sidebar-open {
+  width: 235px;
+}
+
+.sidebar-collapsed {
+  width: 70px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.fitpulse-logo-area {
+  height: 70px;
+
+  padding: 0 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+.sidebar-collapsed .fitpulse-logo-area {
+  justify-content: center;
+
+  padding: 0;
+}
+
+.fitpulse-logo {
+  width: 36px;
+  height: 36px;
+
+  min-width: 36px;
+
+  border-radius: 7px;
+
+  background: #1769da;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.fitpulse-logo-content {
+  white-space: nowrap;
+}
+
+.fitpulse-logo-content h5 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.fitpulse-logo-content span {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 8px;
+
+  color: #aeb4c0;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.fitpulse-menu {
+  flex: 1;
+
+  padding: 10px;
+
+  overflow-y: auto;
+}
+
+.fitpulse-menu-item {
+  width: 100%;
+
+  min-height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 8px 12px;
+
+  margin-bottom: 4px;
+
+  border: 0;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #c7ccd6;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  transition: 0.2s ease;
+
+  white-space: nowrap;
+
+  box-sizing: border-box;
+}
+
+.fitpulse-menu-item i {
+  width: 16px;
+
+  min-width: 16px;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.fitpulse-menu-item:hover {
+  color: #fff;
+
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.fitpulse-menu-item.active {
+  color: #fff;
+
+  background: #1769da;
+}
+
+
+/* =========================
+   COLLAPSED
+========================= */
+
+.sidebar-collapsed .fitpulse-menu-item {
+  justify-content: center;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.fitpulse-sidebar-bottom {
+  padding: 10px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+.fitpulse-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.fitpulse-menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+
+  border-radius: 10px;
+}

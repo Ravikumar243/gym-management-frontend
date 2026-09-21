@@ -1,0 +1,200 @@
+.fitpulse-dashboard {
+  width: 100%;
+}
+
+/* Heading */
+
+.dashboard-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.dashboard-heading h1 {
+  margin: 0;
+
+  font-size: 21px;
+
+  font-weight: 600;
+
+  color: #171c26;
+}
+
+.dashboard-heading p {
+  margin: 5px 0 0;
+
+  font-size: 10px;
+
+  color: #7d8695;
+}
+
+.dashboard-actions {
+  display: flex;
+
+  gap: 8px;
+}
+
+.dashboard-actions button {
+  height: 34px;
+
+  font-size: 9px;
+}
+
+/* Stats */
+
+.dashboard-stat-card {
+  background: #fff;
+
+  border: 1px solid #e0e4eb;
+
+  border-radius: 8px;
+
+  padding: 15px;
+
+  min-height: 115px;
+
+  transition: 0.2s ease;
+}
+
+.dashboard-stat-card:hover {
+  box-shadow: 0 5px 18px rgba(30, 50, 80, 0.06);
+
+  border-color: #d1d7e2;
+}
+
+.stat-top {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+}
+
+.stat-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #edf4ff;
+
+  color: #1769da;
+
+  font-size: 14px;
+}
+
+.stat-change {
+  font-size: 8px;
+
+  color: #2770d5;
+}
+
+.stat-title {
+  margin-top: 13px;
+
+  color: #737d8d;
+
+  font-size: 9px;
+}
+
+.stat-value {
+  margin-top: 2px;
+
+  color: #151a24;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+/* Empty */
+
+.dashboard-empty {
+  height: 350px;
+
+  margin-top: 18px;
+
+  border: 1px solid #e1e4eb;
+
+  border-radius: 8px;
+
+  background: #fff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.dashboard-empty-icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 12px;
+
+  border-radius: 12px;
+
+  background: #edf4ff;
+
+  color: #1769da;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.dashboard-empty h5 {
+  font-size: 14px;
+
+  margin-bottom: 5px;
+}
+
+.dashboard-empty p {
+  margin: 0;
+
+  color: #8b93a1;
+
+  font-size: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .dashboard-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .dashboard-actions {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .dashboard-actions {
+    flex-direction: column;
+  }
+
+  .dashboard-actions button {
+    width: 100%;
+  }
+
+}
