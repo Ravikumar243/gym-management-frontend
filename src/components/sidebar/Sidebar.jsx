@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import menuItems from "../../config/menuConfig";
+import menuItems from "../../config/MenuConfig";
 
 import "./Sidebar.css";
 
