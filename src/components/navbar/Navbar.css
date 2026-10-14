@@ -170,3 +170,80 @@
 
   color: #8c94a3;
 }
+
+
+.fitpulse-user-wrapper {
+  position: relative;
+}
+
+.fitpulse-user {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.fitpulse-profile-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 220px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  z-index: 9999;
+}
+
+.fitpulse-dropdown-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.fitpulse-dropdown-user strong {
+  display: block;
+  font-size: 14px;
+  color: #111827;
+}
+
+.fitpulse-dropdown-user small {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.fitpulse-dropdown-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 8px 0;
+}
+
+.fitpulse-logout-btn {
+  width: 100%;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #dc2626;
+  font-size: 14px;
+  text-align: left;
+}
+
+.fitpulse-logout-btn:hover {
+  background: #fef2f2;
+}
+
+.fitpulse-logout-btn i {
+  font-size: 17px;
+}
